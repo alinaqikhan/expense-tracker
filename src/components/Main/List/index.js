@@ -26,7 +26,7 @@ export const List = () => {
                             </ListItemAvatar>
                             <ListItemText primary={transaction.category} secondary={`$ ${transaction.amount} - ${transaction.date}`}/>
                             <ListItemSecondaryAction>
-                                <IconButton edge="end" aria-label="delete" onClick=""><Delete/></IconButton>
+                                <IconButton edge="end" aria-label="delete" onClick={()=>{}}><Delete/></IconButton>
                             </ListItemSecondaryAction>
                         </ListItem>
                     </Slide>
