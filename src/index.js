@@ -5,10 +5,8 @@ import { App } from "./App";
 import { Provider } from "./context/context";
 
 ReactDOM.render(
-  <React.StrictMode>
     <Provider>
       <App />
-    </Provider>
-  </React.StrictMode>,
+    </Provider>,
   document.getElementById("root")
 );
