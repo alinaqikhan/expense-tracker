@@ -15,11 +15,11 @@ export const Main = () => {
         <Card className={classes.root}>
             <CardHeader title="Expense Tracker" subheader="Track your financial activity"/>
             <CardContent>
-                <Typography align="center" variant="h5">Total Balance: ${balance}</Typography>
+                <Typography align="center" variant="h5">Total Balance: $ {balance}</Typography>
                 <Typography variant="subtitle1" style={{lineHeight:'1.5rem', marginTop:'20px'}}>
                     <InfoCard />
                 </Typography>
-                <Divider />
+                <Divider className={classes.divider}/>
                     <Form />
             </CardContent>
             <CardContent className={classes.cartContent}>

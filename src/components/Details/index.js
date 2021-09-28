@@ -13,8 +13,10 @@ export const Details = ({ title }) => {
         <Card className={title === 'Income'? income:expense}>
             <CardHeader title={title}/>
             <CardContent>
-                <Typography variant="h5">${total}</Typography>
-                <Doughnut data={chartData}/>
+                <Typography variant="h5">$ {total}</Typography>
+                {
+                    total>0 && <Doughnut data={chartData}/>
+                }
             </CardContent>
         </Card>
     )
