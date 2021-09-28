@@ -17,7 +17,7 @@ const initialState = {
 
 export const Form = () => {
 
-    const { radioGroup, button } = useStyles();
+    const { button } = useStyles();
     const [formData, setFormData] = useState(initialState);
     const { addTransaction } = useContext(ExpenseTrackerContext);
     const { segment } = useSpeechContext();
@@ -73,7 +73,8 @@ export const Form = () => {
               createTransaction();
             }
           }
-    }, [segment])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [segment, formData])
 
     return (
         <Grid container spacing={2}> 
