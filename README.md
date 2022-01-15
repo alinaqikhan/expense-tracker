@@ -1,2 +1,2 @@
-# expense-tracker
+# Expense Tracker
 Track your financial activity
